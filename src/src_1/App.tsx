@@ -1,7 +1,8 @@
 import {useState} from "react";
 import './App.css';
-import {Todolist} from './Todolist';
+import {Todolist} from './Todolist.tsx';
 import {v1} from 'uuid';
+import {Button} from "./components/Button.tsx";
 
 
 type ObjectType = {
@@ -168,6 +169,7 @@ export const App = ()=> {
 
     const removeAllTodolists = () => {
         //todo: САМОСТОЯТЕЛЬНО
+        setTodo([])
     }
 
     const removeAllTasksInOneTodo = (todolistId: number) => {
@@ -180,7 +182,7 @@ export const App = ()=> {
     return (
         <div className="App">
             <div>
-
+                <Button title={'removeAllTodolists'} onClick={removeAllTodolists} />
             </div>
 
             {
@@ -207,6 +209,7 @@ export const App = ()=> {
                         changeTaskStatus={changeStatus}
                         filter={tl.filter}
                         removeTodolist={removeTodolist}
+                        removeAllTasksInOneTodo={removeAllTasksInOneTodo}
 
                     />
                 })
