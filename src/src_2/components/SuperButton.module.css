@@ -1,0 +1,73 @@
+/*.blueForSuperButton {*/
+/*    background: blue;*/
+/*    color: white;*/
+/*}*/
+
+/*.redForSuperButton {*/
+/*    background: red;*/
+/*    color: white;*/
+/*}*/
+
+.button {
+    overflow: hidden;
+    padding:  5px 24px;
+
+    border-radius: 3px;
+    border: none;
+
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.red {
+    background-color: red;
+}
+
+.secondary {
+    color: white;
+    background: blue;
+    border: 1px solid blue;
+    border-radius: 3px;
+}
+
+.default {
+    background: green;
+}
+
+.disable {
+    color: white;
+    background: #5b5757;
+    opacity: 0.5;
+}
+
+.default:hover {
+    background: darkgreen;
+}
+
+.red:hover {
+    background: darkred;
+}
+
+.secondary:hover {
+    background: #282c34;
+}
+
+.default:active {
+    background: darkblue;
+}
+
+.secondary:active {
+    background: #61dafb;
+}
+
+.red:active {
+    background: #801717;
+}
+
+.button:disabled {
+    cursor: default;
+}
