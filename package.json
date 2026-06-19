@@ -9,14 +9,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/styled-components": "^5.1.36",
     "react": "19.0.0",
     "react-dom": "19.0.0",
+    "styled-components": "^6.4.2",
     "uuid": "11.1.0"
   },
   "devDependencies": {
+    "@swc/plugin-styled-components": "^12.13.0",
     "@types/react": "19.0.10",
     "@types/react-dom": "19.0.4",
     "@vitejs/plugin-react": "4.3.4",
+    "@vitejs/plugin-react-swc": "^4.3.1",
     "globals": "15.15.0",
     "typescript": "5.7.2",
     "vite": "6.2.0"
